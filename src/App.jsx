@@ -64,7 +64,7 @@ export default function Component() {
     setFormData({ ...formData, budget });
     setCurrentStep(currentStep + 1);
   };
-//diretly return to state 1
+//diretly return to state 1 and 2 depend on step
   const returnHome = () => {
     if(currentStep===2){
     setCurrentStep(currentStep - 1);
