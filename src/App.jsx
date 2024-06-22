@@ -66,7 +66,12 @@ export default function Component() {
   };
 //diretly return to state 1
   const returnHome = () => {
-    setCurrentStep(currentStep - 2);
+    if(currentStep===2){
+    setCurrentStep(currentStep - 1);
+    }
+    else{
+      setCurrentStep(currentStep - 2);
+    }
   };
 
   return (
